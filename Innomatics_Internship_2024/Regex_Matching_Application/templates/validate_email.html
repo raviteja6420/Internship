@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            width: 70%;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Validation Result</h1>
+        <p>Email: {{ email }}</p>
+        {% if is_valid %}
+            <p>This email address is valid.</p>
+        {% else %}
+            <p>This email address is not valid.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
